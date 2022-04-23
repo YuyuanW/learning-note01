@@ -1,0 +1,48 @@
+<!-- title悬浮显示完整内容 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuyuan的小超市</title>
+    <style>
+        [class = middle]{
+            background-color: azure;
+            color: brown;
+        }
+        #xxxx{
+            border: 3px solid pink;
+            white-space: nowrap; /* 不要换行 */     
+            overflow: hidden; /* 超出部分隐藏 */
+            text-overflow: ellipsis; /* 隐藏的部分用省略号表示 */
+        }
+
+    </style>
+</head>
+<body>
+    <header id="xxxx" title="是风动 还是幡动 轮回难道就不同 你是我身外 
+    化白云任去来 推开孤城万里 吹渡春风几千载 我是你途中 有青山撞入怀 不动声色见你如是才自在 
+    你在我身畔">广告位招租</header>
+    <!-- title在js.jirengu.com可以显示，这里无法显示 -->
+    <div class="middle">
+        <h1>Yuyuan百货商行</h1>
+        <h2>你想要的我们都有</h2>
+        <main>
+            <section>
+                <h3>零食区</h3>
+                <p>辣条、辣条、辣条</p>
+            </section>
+            <section>
+                <h3>生鲜区</h3>
+                <p>虾滑、黑鱼、鳌虾</p>
+            </section>
+        </main>
+    </div>
+    <aside>
+        联系方式：327531
+    </aside>
+    <footer>&copy; 版权归Yuyuan所有</footer>
+</body>
+</html>

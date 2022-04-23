@@ -1,0 +1,39 @@
+<!-- tabindex是tab键选中，enter键输入，应用场景：没有鼠标的用户
+-1：永远不被选中，0：最后被选中，正整数的选中顺序按照大小，小的先被teb -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuyuan的小超市</title>
+    <style>
+        [class = middle]{
+            background-color: azure;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header tabindex="100">广告位招租</header>
+    <div class="middle">
+        <h1>Yuyuan百货商行</h1>
+        <h2>你想要的我们都有</h2>
+        <main>
+            <section>
+                <h3>零食区</h3>
+                <p tabindex="0">辣条、辣条、辣条</p>
+            </section>
+            <section>
+                <h3 tabindex="2">生鲜区</h3>
+                <p tabindex="-1">虾滑、黑鱼、鳌虾</p>
+            </section>
+        </main>
+    </div>
+    <aside>
+        联系方式：327531
+    </aside>
+    <footer>&copy; 版权归Yuyuan所有</footer>
+</body>
+</html>
