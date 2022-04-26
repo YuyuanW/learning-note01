@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table的属性</title>
+    <style>
+        table{table-layout: auto;  
+            /* 单元格的宽度取决于表格中内容的长度 */
+        border: 1px solid pink;  
+        /* 边框线的样式 */
+        border-collapse: collapse;
+        /* 相邻的单元格公用一条边框线 */
+        }
+        td,th{
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th> </th>
+                <th>小李</th>
+                <th>小王</th>
+                <th>小张</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>语文</th>
+                <td>89</td>
+                <td>65</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>数学</th>
+                <td>78</td>
+                <td>89</td>
+                <td>72</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>总和</th>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+            </tr>
+        </tfoot>
+    
+</body>
+</html>

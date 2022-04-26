@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form的属性</title>
+</head>
+<body>
+    <form action="/xx" method="POST" autocomplete="on" target="aaa">
+        <!-- action是要请求加载的界面，post是发送请求的方式 -->
+        <input name="username" type="text">
+        <!-- autocomplete是自动填充，加上了一个name的属性后可以实现 -->
+        <input type="submit">
+        <iframe name="aaa" src="href.html" frameborder="0"></iframe>
+        <!-- target提交是让form提交到aaa界面，并让aaa界面刷新 -->
+    </form>
+</body> 
+</html>
