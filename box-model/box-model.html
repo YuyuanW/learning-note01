@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒模型的介绍</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <main>  
+    <h1>盒模型的介绍</h1>
+    <nav>
+        <ol>
+            <a href="#aa1">
+                <li>盒模型的组成</li>
+            </a>
+            <a href="#aa2">
+                <li>两种盒模型</li>
+            </a>
+            <a href="#aa3">
+                <li>两种盒模型属性的区别</li>
+            </a>
+            <a href="#aa4">
+                <li>盒模型中margin的合并</li>
+            </a>
+        </ol>
+    </nav>
+    <hr>
+    
+        <section>
+            <h3 id="aa1">盒模型的组成</h3>
+            <div>
+                盒模型：盒模型又称框模型（Box Model）,包含了元素内容（content）、内边距（padding）、边框（border）、外边距（margin）几个要素。
+            </div>
+            <img src="./boxmodel1.gif" alt="盒模型示范图">
+        </section>
+        <hr>
+        <section>
+            <h3 id="aa2">两种盒模型</h3>
+            <div>
+                盒模型分为content-box和border-box。<br>
+                内容盒：content-box，以content为边界。<br>
+                边框盒：border-box，以border为边界。<br>
+            </div>
+            <img src="./twobox.png" alt="两个盒子示意图">
+            <p>
+                w3c是content-box，ie是border-box。
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h3 id="aa3">两种盒模型属性的区别</h3>
+            <p>width和height的设置</p>
+            <h5>content-box</h5>
+                <pre>
+                    .content-box {
+                        box-sizing:content-box;
+                        width: 100px;
+                        height: 50px;
+                        padding: 10px;
+                        border: 5px solid red;
+                        margin: 15px;
+                      }                      
+                </pre>
+                <div>
+                    <h5>content-box数值显示</h5>
+                    <img src="./contentbox.png" alt="content-box数值显示">
+                </div>
+            <br>
+            <br>
+            <h5>border-box</h5>
+            <pre>
+                .border-box {
+                    box-sizing: border-box;
+                    width: 100px;
+                    height: 50px;
+                    padding: 10px;
+                    border: 5px solid red;
+                    margin: 15px;
+                  }
+                                     
+            </pre>
+            <div>
+                <h5>border-box数值显示</h5>
+                <img src="./borderbox.png" alt="border-box数值显示">
+            </div>
+            <quote>width = content + 2 * padding + 2 * border = 70px + 2 x10px + 2 x5px = 100px</quote>
+        </section>
+        <hr>
+        <section>
+            <h3 id="aa4">盒模型中margin的合并</h3>
+            <div>margin会出现上下合并的情况<br>
+                <p>合并的情形可以参考下面两种图，有父子合并和兄弟合并</p><br>
+                <img src="./margin1.png" alt="兄弟"> <br>
+                <img src="./margin02.png" alt="父子兄弟"> <br>
+            </div>
+        </section>
+        <hr>   
+        </main> 
+        <footer>&copy;图片是百度搜图随便贴的，css代码部分参考陈坚泓的笔记，仅做学习示范</footer>
+    </article>
+</body>
+</html>
