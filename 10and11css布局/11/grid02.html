@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid的使用演示02fr</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 2fr 1fr;
+            border: 1px solid green;
+            min-height: 400px;
+        }
+
+        .container>div{
+            border: 1px solid red;
+        }
+        .container>.e{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background: black;
+        }
+
+        /* grid与平均布局 */
+        .imageList{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            outline: 1px solid red;
+            width: 800px;
+            margin-top: 10px;
+            grid-gap:12px;
+            /* 算好空隙，让grid自己给你布局 */
+        }
+
+        .image{
+            width: 191px;
+            height: 191px;
+            background: gray;
+            margin-top: 10px;            
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="caaar">
+        <div class="container">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+        </div>
+        <div class="imageList">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>        
+            </div>
+    </div>
+</body>
+</html>

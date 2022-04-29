@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex示范</title>
+    <style>
+        /* container样式 */
+
+        .container{
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row; /*流向*/
+            /* flex-direction是排列方向的属性，
+            reverse表示反着排 */
+            flex-wrap: wrap; /*拆变换行*/
+            justify-content: center;  /*主轴对齐*/
+            align-items: flex-end; /*次轴对齐*/
+            align-content: center; /*多行对齐*/
+             
+        }
+        .container>.item{
+            border:1px solid green;
+            width:50px;
+            height:50px;
+        }
+
+        .container>.item1{
+            width: 50px;
+            height: 200px;
+        }
+        .container>.item2{
+            width: 50px;
+            height: 100px;
+        }
+        .container>.item3{
+            width: 50px;
+            height: 300px;
+        }
+
+        /* item样式 */
+
+        .item:first-child{
+            order:6;
+            flex-grow:1;
+        }
+
+        .item:nth-child(2){
+            order:-1;
+        }
+
+        .item:last-child{
+            order:4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">第1个孩子</div>
+        <div class="item item2">第2个孩子</div>
+        <div class="item item3">第3个孩子</div>
+        <div class="item">第4个孩子</div>
+        <div class="item">第5个孩子</div>
+        <div class="item">第6个孩子</div>
+        <div class="item">第7个孩子</div>
+        <div class="item">第8个孩子</div>
+        <div class="item">第9个孩子</div>
+        <div class="item">第10个孩子</div>
+        <div class="item">第11个孩子</div>
+        <div class="item">第12个孩子</div>
+        <div class="item">第13个孩子</div>
+        <div class="item">第14个孩子</div>
+        <div class="item">第15个孩子</div>
+    </div>
+
+
+</body>
+</html>

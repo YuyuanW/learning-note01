@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏导航</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        img{
+            max-width: 100%;
+        }
+        .logo{
+            background-color: rgb(253, 252, 252);
+            vertical-align:top;
+            width: 100px;
+            height: 38px;
+            /* border: 1px solid wheat; */
+            float:left;
+           
+        }
+        ul{
+            list-style: none;
+            /* border: 1px solid wheat; */
+            margin-top: 4px;
+            margin-left: 4px;
+            margin-right: 4px;
+            float: left;
+            
+        }
+        ul>li{
+            /* border: 1px solid #070707; */
+            padding: 4px 0.5em;
+            width: 50px;
+            background-color: rgb(240, 243, 246);
+            float: left;
+        }
+        
+        header{
+            /* border:2px solid black; */
+            color:brown;
+            background-color: rgb(252, 251, 251) ;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+    <div  class="logo">
+        <img src="./background01.png" alt="logo">
+    </div>
+    <ul class="clearfix">
+        <li>首页</li>
+        <li>课程</li>
+        <li>优惠</li>
+        <li>关于</li>
+    </ul>
+</header>
+</body>
+</html>

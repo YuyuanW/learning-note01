@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex重新做float的布局</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        ul,ol{
+            list-style: none;
+        }
+
+        header{
+            display: flex;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+            /* 或者在ul里面写margin-left：auto */
+            align-items: center;
+            background: gray;
+            padding: 4px;
+        }
+
+        .logo{
+            /* background:gray; */
+            display: flex;
+            align-items: center;
+        }
+
+        .logo>img{
+            height:26px;
+            vertical-align: top;
+            /* border:1px solid red; */
+        }
+
+        ul{
+            display: flex;
+            /* border: 1px solid red; */
+        }
+
+        ul>li{
+            /* border: 1px solid red; */
+            /* line-height: 32px; */
+            padding:4px;
+        }
+
+        .content{
+            display: flex;
+            min-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content>aside{
+            background: black;
+            width: 200px;
+        }
+
+        .content>main{
+            background: #666;
+            height: 400px;
+            flex-grow: 1;
+        }
+
+        .content>.ad{
+            background: #999;
+            width: 100px;
+        }
+
+        .imageList{
+            /* border: 1px solid red; */
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        .imageList>.xx{
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            margin-right: -12px;
+        }
+
+        .image{
+            width: 191px;
+            height: 191px;
+            background: grey;
+            border: 1px solid red;
+            margin-right: 12px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png">
+        </div>
+        <ul>
+            <li>首页</li>
+            <li>课程</li>
+            <li>优惠</li>
+            <li>关于</li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <aside>一行有六个字</aside>
+        <main></main>
+        <div class="ad"></div>
+    </div>
+
+    <div class="imageList">
+        <dix class="xx">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </dix>
+    </div>
+</body>
+</html>

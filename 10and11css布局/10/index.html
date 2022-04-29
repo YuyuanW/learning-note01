@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid pink;
+        
+            background-color: aquamarine;
+            display: inline-block;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .log{
+            border: 2px solid burlywood;
+            width: 100px;
+            height: 200px;
+            float: left;
+            margin-left: 10px;
+            _margin-left: 5px;
+        }
+        nav{
+            border: 2px solid yellow;
+            width: 50px;
+            height: 100px;
+            float: left;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        .intro{
+            border: 2px solid green;
+            max-width: 200px;
+            height: 200px;  
+            float: left;
+            margin-left: 10px;
+            display: inline-block;
+        }
+    </style>
+  </head>
+  <body>
+      <header class="clearfix">
+        <div class="log"> 图标</div>
+        <nav>导航</nav>
+        <div class="intro">列表</div>
+      </header>
+     
+  </body>
+</html>
