@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳动的♥</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #heart{
+            margin:100px;
+            /* border: 1px solid black; */
+            transition: all 0.5s;
+            display: inline-block;
+            animation: 500ms alternate infinite heartpp;
+        }
+        
+        @keyframes heartpp{
+            from{
+                transform: scale(1.0);
+            }
+            to{
+                transform: scale(1.5);
+            }
+        }
+        .left{
+            background: red;
+            border: 1px solid red;
+            width: 50px;
+            height: 50px;
+            /* transform: rotate(45deg); */
+            border-radius: 50%;
+            transform: translatex(-20px) translatey(80px);
+        }
+        .right{
+            background: red;
+            border: 1px solid red;
+            width: 50px;
+            height: 50px;
+            /* transform: rotate(45deg); */
+            border-radius: 50%;
+            transform: translatex(20px) translatey(30px);
+        }
+        .bottom{
+            background: red;
+            border: 1px solid red;
+            width: 50px;
+            height: 50px;
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+    
+</body>
+</html>
