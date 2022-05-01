@@ -41,8 +41,10 @@ Transition：.A--transfrom-- >.B
 使用可以参考：[animation的基本使用](https://github.com/YuyuanW/learning-note01/blob/2fb851bcf1db314fafad34429083706aa8e02305/13%E5%8A%A8%E7%94%BB%E2%99%A5/animation.html)
 
 ### 两颗跳动的♥ 
-[transition的♥](https://github.com/YuyuanW/learning-note01/blob/2fb851bcf1db314fafad34429083706aa8e02305/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart.html)、 
-[animation的♥](https://github.com/YuyuanW/learning-note01/blob/2fb851bcf1db314fafad34429083706aa8e02305/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart-animation.html)
+* [transition的♥](https://yuyuanw.github.io/learning-note01/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart.html)，
+[transition心源码](https://github.com/YuyuanW/learning-note01/blob/2fb851bcf1db314fafad34429083706aa8e02305/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart.html)
+* [animation的♥](https://yuyuanw.github.io/learning-note01/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart-animation.html)，
+[animation心源码](https://github.com/YuyuanW/learning-note01/blob/2fb851bcf1db314fafad34429083706aa8e02305/13%E5%8A%A8%E7%94%BB%E2%99%A5/heart-animation.html)
 
 ### css的学习
 学数学习惯了就喜欢啥都先说地清清楚楚再做题，学css理清楚是先实践再整理。
