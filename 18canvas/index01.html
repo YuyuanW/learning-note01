@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画板</title>
+    <link rel="stylesheet" href="style01.css">
+    <!-- 把style里面的剪切到另一个css文件，删掉<style></style>，引入链接 -->
+</head>
+<body>
+    <div id="canvas"></div>
+    <script>
+        // onmousemove是可以在移动的时候也画点点
+        canvas.onclick = (e)=>{
+            console.log(e.clientX)
+            console.log(e.clientY)
+            // console调试大法
+            let div = document.createElement('div') 
+            //  新建了个div层
+            div.style.position = 'absolute'
+            div.style.left = e.clientX + 'px'
+            div.style.top = e.clientY + 'px'
+            
+            // div.style.border = '1px solid red'
+            
+
+            div.style.marginLeft = '-3px'
+            div.style.marginTop = '-3px'
+
+            div.style.borderRadius = '50%' 
+            div.style.backgroundColor = 'black'
+            canvas.appendChild(div)
+        }
+    </script>
+</body>
+</html>

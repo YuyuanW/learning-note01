@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>默写</title>
+    <style>
+        *{
+            margin:0;padding: 0;box-sizing: border-box;
+        }
+        #canvas{
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas"></div>
+    <script>
+        canvas.onclick = (e)=>{
+        x = e.clientX
+        y = e.clientY
+        console.log(x)
+        console.log(y)
+
+        let div = document.createElement('div')
+        div.style.position = 'absolute'
+        div.style.left = x + 'px'
+        div.style.top = y + 'px'
+        div.style.width = '6px'
+        div.style.height = '6px'
+        
+        div.style.marginLeft = '-3px'
+        div.style.marginTop = '-3px'
+        div.style.borderRadius = '50%' 
+        div.style.backgroundColor = 'black'
+        canvas.appendChild(div)
+
+        }
+    </script>
+</body>
+</html>

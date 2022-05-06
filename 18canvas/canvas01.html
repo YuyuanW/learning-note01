@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画板canvas</title>
+    <link rel="stylesheet" href="canvas01.css">
+    <!-- 把style里面的剪切到另一个css文件，删掉<style></style>，引入链接 -->
+</head>
+<body>
+    <canvas id="canvas" width='100' height="100"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas')
+        // 捕捉高度，宽度
+        canvas.width = document.documentElement.clientWidth
+        canvas.height = document.documentElement.clientHeight
+        // 画线
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'blue';
+        ctx.strokeStyle = 'none';
+        
+
+        var painting = false
+
+        canvas.onmousedown = () =>{
+            painting = true
+        }
+
+        canvas.onmousemove = (e) =>{
+            if (painting === true){ 
+                ctx.beginPath();
+                ctx.arc(e.clientX,e.clientY,10,0,2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                }else{
+                    console.log('啥也不做')
+                }
+        }
+
+        canvas.onmouseup = () =>{
+            painting = false
+        }
+    </script>
+</body>
+</html>
