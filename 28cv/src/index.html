@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>YuyuanW的会动的简历</title>
+</head>
+<body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <script src="./main.js"></script>
+    <div id="div1wrapper"><div id="div1"></div></div>
+    <style>
+        div{
+            word-break: break-all;
+        }
+        #div1{
+            position:fixed;
+            left:50%;
+            transform: translateX(-50%);
+            top:20px;
+           /* css背景界面  css gradient background generator */
+        }
+        #div1::before{
+            content:'';
+            background-color: black;
+            }
+        #div1::after{
+            content:'';
+            background-color: white;
+            }    
+        
+        @media (max-width:500px){
+            #html {
+                height: 70vh;
+                overflow: auto;
+            }
+            #div1wrapper{
+                height: 30vh;
+                display: -webkit-box;
+                -webkit-box-align: center;
+                -webkit-box-pack: center;
+            }
+            #div1{
+                top:0;
+                right:0;
+                position: relative;
+            }
+        }
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        *::after {
+            box-sizing: border-box;
+        }
+        *::before {
+            box-sizing: border-box;
+        }
+
+    </style>
+</body>
+</html>
