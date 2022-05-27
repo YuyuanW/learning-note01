@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  div[class^=level] {
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-flex;
+  }
+  .level1 {
+    padding: 10px;
+    background: purple;
+  }
+  .level2 {
+    padding: 10px;
+    background: blue;
+  }
+  .level3 {
+    padding: 10px;
+    background: cyan;
+  }
+  .level4 {
+    padding: 10px;
+    background: green;
+  }
+  .level5 {
+    padding: 10px;
+    background: yellow;
+  }
+  .level6 {
+    padding: 10px;
+    background: orange;
+  }
+  .level7 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    background: red;
+    border-radius: 50%;
+  }
+  .x{
+    background: transparent;
+  }

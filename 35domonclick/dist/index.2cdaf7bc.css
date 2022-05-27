@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+div[class^="level"] {
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.level1 {
+  background: purple;
+  padding: 10px;
+}
+
+.level2 {
+  background: #00f;
+  padding: 10px;
+}
+
+.level3 {
+  background: #0ff;
+  padding: 10px;
+}
+
+.level4 {
+  background: green;
+  padding: 10px;
+}
+
+.level5 {
+  background: #ff0;
+  padding: 10px;
+}
+
+.level6 {
+  background: orange;
+  padding: 10px;
+}
+
+.level7 {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.x {
+  background: none;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
