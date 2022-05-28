@@ -9,3 +9,4 @@
 * [会动的简历！！！](https://yuyuanw.github.io/learning-note01/28cv/src/index.html)
 * [造轮子dom参考版](https://github.com/FrankFang/dom-demo-1/tree/master/src)
 * [造轮子dom自写版](https://github.com/YuyuanW/learning-note01/tree/master/32encapsulateDOM)
+* [可以使用的导航项目](https://yuyuanw.github.io/learning-note01/36nav-1/src/index.html)
