@@ -162,14 +162,13 @@ body{
     height: 160px;
     background: white;
     margin-bottom: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.siteList .addButton .icon{
+.siteList .addButton img{
     width: 100px;
     height: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 

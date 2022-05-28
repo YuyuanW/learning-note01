@@ -20,15 +20,12 @@ let hashMap = xObject || [
 ]
 
 
-
-
 const $siteList = $('.siteList')   //查找元素class不加. 这个错误已经犯了n次
 const $lastList = $siteList.find('li.last')
 
 const render = ()=>{
     $siteList.find('li:not(.last)').remove()
-    hashMap.forEach((node, index) => { //新手写的代码就是一坨屎，别自己乱用函数
-        console.log(1)
+    hashMap.forEach((node, index) => { //新手写的code就是一坨shit，别自己乱用函数for的时候哈希映射过来简单，映射回去难啊
         const $li = $(`<li>
           <div class="site">
             <div class="logo">${link(node.url)[0].toUpperCase()}</div>
@@ -81,11 +78,18 @@ const simplifyUrl = (url)=>{
     .replace('www.','')
 }
 
+let isInputing = false
 $(document).on('keypress', (e) => {
     const {key} = e
+    if(isInputing)return;
     for (let i = 0; i < hashMap.length; i++) {
       if (link(hashMap[i].url)[0].toLowerCase()=== key) {
+       
         window.open(hashMap[i].url)
       }
     }
-  })
+  }) //这个功能不写条件好多bug！！烦！！
+
+  $('#search').on('focus', () => isInputing = true)
+  $('#search').on('blur', () => isInputing = false)
+

@@ -21,7 +21,6 @@ const $lastList = $siteList.find('li.last');
 const render = ()=>{
     $siteList.find('li:not(.last)').remove();
     hashMap.forEach((node, index)=>{
-        console.log(1);
         const $li = $(`<li>
           <div class="site">
             <div class="logo">${link(node.url)[0].toUpperCase()}</div>
@@ -66,9 +65,16 @@ window.onbeforeunload = ()=>{
 const simplifyUrl = (url)=>{
     return url.replace('https://', '').replace('http://').replace('www.', '');
 };
+let isInputing = false;
 $(document).on('keypress', (e)=>{
     const { key  } = e;
+    if (isInputing) return;
     for(let i = 0; i < hashMap.length; i++)if (link(hashMap[i].url)[0].toLowerCase() === key) window.open(hashMap[i].url);
-});
+}) //这个功能不写条件好多bug！！烦！！
+;
+$('#search').on('focus', ()=>isInputing = true
+);
+$('#search').on('blur', ()=>isInputing = false
+);
 
 //# sourceMappingURL=index.de158e3a.js.map
