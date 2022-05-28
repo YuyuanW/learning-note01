@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>前航 - 前端导航网站</title>
+    <link rel="stylesheet" href="./style.css">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           /* vertical-align: -0.15em; */
+           /* fill: currentColor; */
+           /* overflow: hidden; */
+            /* border: 1px solid yellow; */
+         
+        }
+        img{
+           width: 64px;
+           height: 64ppx;
+        }
+    </style>
+</head>
+<body>
+    <header class="globalHeader">
+        <form action="https://cn.bing.com/search" class="search">
+            <input type="text" class="sb_form_q" name="q" type="search">
+            <button>搜索</button>
+        </form>
+    </header>
+
+    <main class="globalMain">
+        <ul class="siteList">
+            <!-- <li>
+                <a href="https://www.acfun.cn">
+                    <div class="site">
+                        <div class="logo">A</div>
+                        <div class="link">acfun.cn</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.bilibili.com/">
+                    <div class="site">
+                        <div class="logo"><img src="./icon_bilibili-circle.png"></div>
+                        <div class="link">bilibili.com</div>
+                    </div>
+                </a>
+            </li> -->
+            <li class="last">
+                <div class="addButton">
+                    <div class="icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-Add"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+    <script src="//at.alicdn.com/t/font_3434550_ojykvyql97a.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
