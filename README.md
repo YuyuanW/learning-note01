@@ -10,3 +10,4 @@
 * [造轮子dom参考版](https://github.com/FrankFang/dom-demo-1/tree/master/src)
 * [造轮子dom自写版](https://github.com/YuyuanW/learning-note01/tree/master/32encapsulateDOM)
 * [可以使用的导航项目](https://yuyuanw.github.io/learning-note01/36nav-1/src/index.html)
+* [Pikachu](https://yuyuanw.github.io/learning-note01/45Pikachu-1/src/index2.html)
