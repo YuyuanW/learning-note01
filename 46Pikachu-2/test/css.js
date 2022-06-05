@@ -10,7 +10,7 @@ const string =   `
 .skin{
     background: rgb(255,230,0);
     min-height: 50vh;
-    width: 100vw;
+    width: 100%;
 
     position: relative;
 
@@ -26,7 +26,7 @@ const string =   `
 
     position: absolute;
     left:50%;
-    top:60px;
+    top:80px;
     margin-left:-20px;
     margin-top: -20px;
 
@@ -65,7 +65,7 @@ const string =   `
     
     position: absolute;
     left:50%;
-    top:60px;
+    top:80px;
 
     border-radius: 50%;
     background: rgb(46,46,46);
@@ -100,7 +100,7 @@ const string =   `
 
     position: absolute;
     left:50%;
-    top:60px;
+    top:80px;
 
     border-radius: 50%;
     background-color: #FF0000;
@@ -125,7 +125,7 @@ const string =   `
     position: absolute;
     left:50%;
     margin-left: -100px;
-    top:60px;
+    top:80px;
     margin-top: 16px;
 
     overflow: hidden;
