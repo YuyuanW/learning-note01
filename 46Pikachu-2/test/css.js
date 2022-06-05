@@ -26,7 +26,7 @@ const string =   `
 
     position: absolute;
     left:50%;
-    top:140px;
+    top:60px;
     margin-left:-20px;
     margin-top: -20px;
 
@@ -65,7 +65,7 @@ const string =   `
     
     position: absolute;
     left:50%;
-    top:140px;
+    top:60px;
 
     border-radius: 50%;
     background: rgb(46,46,46);
@@ -100,7 +100,7 @@ const string =   `
 
     position: absolute;
     left:50%;
-    top:140px;
+    top:60px;
 
     border-radius: 50%;
     background-color: #FF0000;
@@ -125,7 +125,7 @@ const string =   `
     position: absolute;
     left:50%;
     margin-left: -100px;
-    top:140px;
+    top:60px;
     margin-top: 16px;
 
     overflow: hidden;
