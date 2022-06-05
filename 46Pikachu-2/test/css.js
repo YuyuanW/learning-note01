@@ -10,7 +10,7 @@ const string =   `
 .skin{
     background: rgb(255,230,0);
     min-height: 50vh;
-    width: 100%;
+    width: 100vw;
 
     position: relative;
 
