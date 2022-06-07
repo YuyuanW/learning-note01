@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+body > #page {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+section {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#app2 > .tab-bar {
+  display: flex;
+}
+
+#app2 > .tab-bar > li {
+  width: 50%;
+  border: 1px solid gray;
+}
+
+#app2 > .tab-bar > li.selected {
+  color: azure;
+  background-color: #9bf3f3;
+}
+
+#app2 > .tab-content > li {
+  display: none;
+}
+
+#app2 > .tab-content > li.active {
+  display: block;
+}
+
+#app3 > .square {
+  width: 10vw;
+  height: 10vw;
+  background-color: #7fffd4;
+  border: 1px solid #000;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  transition: transform 1s;
+}
+
+#app3 > .square.active {
+  background-color: #c08ada;
+  transform: translateX(30vw);
+}
+
+#app4 > .circle {
+  width: 30vw;
+  height: 30vw;
+  border: 1px solid purple;
+  border-radius: 50%;
+  margin-top: 10vw;
+  margin-left: 10vw;
+}
+
+@keyframes change {
+  0% {
+    background-color: #aee6d3;
+  }
+
+  50% {
+    background-color: pink;
+  }
+
+  100% {
+    background-color: #f4cc7b;
+  }
+}
+
+#app4 > .circle.active {
+  animation: change 1s linear infinite alternate;
+}
+
+/*# sourceMappingURL=index.497dfdab.css.map */

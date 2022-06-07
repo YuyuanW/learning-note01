@@ -1,0 +1,58 @@
+button {
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+body > #page {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+section {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+#app2 {
+  border: 1px solid #00f;
+}
+
+#app2 > .tab-bar {
+  display: flex;
+}
+
+#app2 > .tab-bar > li {
+  width: 50%;
+  border: 1px solid gray;
+}
+
+#app2 > .tab-bar > li.selected {
+  color: azure;
+  background-color: #9bf3f3;
+}
+
+#app2 > .tab-content > li {
+  display: none;
+}
+
+#app2 > .tab-content > li.active {
+  display: block;
+}
+
+/*# sourceMappingURL=index.2d7055af.css.map */

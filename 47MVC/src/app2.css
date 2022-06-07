@@ -1,0 +1,20 @@
+
+#app2 > .tab-bar{
+    display: flex;
+}
+
+#app2 > .tab-bar > li{
+    border:1px solid gray;
+    width:50%;
+}
+#app2 > .tab-bar >li.selected{
+    background-color: rgb(155, 243, 243);
+    color: azure;
+}
+#app2 > .tab-content >li{
+    display: none;
+}
+
+#app2 > .tab-content > li.active{
+    display: block;
+}

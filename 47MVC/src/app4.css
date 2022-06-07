@@ -1,0 +1,25 @@
+#app4 > .circle{
+    width:30vw;
+    height: 30vw;
+    border:1px solid purple;
+
+    margin-left: 10vw;
+    margin-top: 10vw;
+
+    border-radius: 50%;
+}
+@keyframes change {
+    0%{
+        background-color: rgb(174, 230, 211);
+    }
+    50%{
+        background-color: pink;
+    }
+    100%{
+        background-color: rgb(244, 204, 123);
+    }
+}
+
+#app4 > .circle.active{
+    animation: change 1s infinite alternate linear;
+}
