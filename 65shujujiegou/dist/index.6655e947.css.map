@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["queue/src/style.css"],"sourcesContent":["#screen{\r\n    border:1px solid red;\r\n    width: 200px;\r\n    height:200px;\r\n\r\n}"],"names":[],"version":3,"file":"index.6655e947.css.map","sourceRoot":"/__parcel_source_root/"}
